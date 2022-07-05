@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="style.css" rel="stylesheet">
+    <script src="index.js"></script>
+    <script src="axios.min.js"></script>
+
+</head>
+<body>
+<div id="layer">
+    <img id="logo" src="assets/logo.png" alt="logo">
+    <div class="dayChoiceBar">
+        <div id="d1" class="dayChoiceComp selected" onclick="prograSelection(this,'day')">Samedi</div>
+        <div id="d2" class="dayChoiceComp" onclick="prograSelection(this,'day')">Dimanche</div>
+    </div>
+    <div class="sceneChoiceBar">
+        <div id="s1" class="sceneChoiceComp selected" onclick="prograSelection(this,'scene')">Scène 1</div>
+        <div id="s2" class="sceneChoiceComp" onclick="prograSelection(this,'scene')">Scène 2</div>
+        <div id="s3" class="sceneChoiceComp" onclick="prograSelection(this,'scene')">Scène 3</div>
+        <div id="s4" class="sceneChoiceComp" onclick="prograSelection(this,'scene')">Scène 4</div>
+    </div>
+    <div class="progra">
+        <img id="grid" src="assets/grid.png" alt="grille horaire">
+        <div id="d1s1" class="scene">
+            <div class="artist" id="BEP">
+                Black Eyed Peas <br> 22:45 - 00:15
+            </div>
+            <div class="conf" id="Defo">
+                Déforestation <br> 21:15 - 22:15
+            </div>
+            <div class="artist" id="LDR">
+                Lana Del Rey <br> 19:15 - 20:45
+            </div>
+            <div class="conf" id="TriSelec">
+                Tri sélectif <br> 18:15 - 18:45
+            </div>
+        </div>
+        <div id="d1s2" class="scene">
+            <div class="artist" id="DG">
+                David Guetta <br> 22:45 - 00:15
+            </div>
+            <div class="artist" id="BS">
+                Bob Sinclar <br> 20:45 - 22:15
+            </div>
+            <div class="artist" id="MS">
+                Martin Solveig <br> 18:45 - 20:15
+            </div>
+        </div>
+        <div id="d1s3" class="scene">
+            <div class="artist" id="BCP">
+                Black Try Peas <br> 22:45 - 00:15
+            </div>
+        </div>
+        <div id="d1s4" class="scene">
+            <div class="artist" id="BPP">
+                Black Three Peas <br> 22:45 - 00:15
+            </div>
+        </div>
+        <div id="d2s1" class="scene">
+            <div class="artist" id="BTP">
+                Black Try Peas <br> 22:45 - 00:15
+            </div>
+            <div class="conf" id="Defor">
+                defr <br> 21:15 - 22:15
+            </div>
+            <div class="artist" id="LDS">
+                Lana Del Salopards <br> 19:15 - 20:45
+            </div>
+            <div class="conf" id="TriSellec">
+                Tri se <br> 18:15 - 18:45
+            </div>
+        </div>
+        <div id="d2s2" class="scene">
+            <div class="artist" id="DJS">
+                DJ Snake <br> 22:45 - 00:15
+            </div>
+            <div class="artist" id="ML">
+                Major Lazer <br> 20:45 - 22:15
+            </div>
+        </div>
+        <div id="d2s3" class="scene">
+            <div class="artist" id="BMP">
+                Black Meat Peas <br> 22:45 - 00:15
+            </div>
+        </div>
+        <div id="d2s4" class="scene">
+            <div class="artist" id="BKP">
+                Black Klux Peas <br> 22:45 - 00:15
+            </div>
+        </div>
+    </div>
+    <div class="navbar">
+        <img class="navLogo" id="Home" src="assets/SelectedHome.png" alt="Home">
+        <img class="navLogo" id="Plan" src="assets/Plan.png" alt="Plan" onclick="window.location.href='plan.html'">
+        <img class="navLogo" id="Wallet" src="assets/Wallet.png" alt="Wallet" onclick="window.location.href='wallet.html'">
+    </div>
+    <div class="spacer">
+    </div>
+</div>
+<div id="PCLayer">
+    Veuillez vous connecter sur un format mobile
+</div>
+</body>
+</html>

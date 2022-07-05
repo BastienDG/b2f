@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Aide</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="style.css" rel="stylesheet">
+  <script src="index.js"></script>
+  <script src="axios.min.js"></script>
+</head>
+<body>
+<div id="layer">
+<svg id="return" style="width:40px;height:40px" viewBox="0 0 24 24" onclick="window.location.href = 'wallet.html'">
+  <path fill="currentColor" d="M20,11V13H8L13.5,18.5L12.08,19.92L4.16,12L12.08,4.08L13.5,5.5L8,11H20Z" />
+</svg>
+
+<p id="error" class="error"></p>
+
+<label class="logLabel" for="helpPhone">Numéro de téléphone</label>
+
+<input type="text" class="logInput" id="helpPhone" required>
+
+<label class="logLabel" for="helpObject">Objet</label>
+
+<input type="text" class="logInput" id="helpObject" required>
+
+<label class="logLabel" for="helpMessage">Message</label>
+
+<textarea class="helpMessage" id="helpMessage" required></textarea>
+
+<button id="helpSend" onclick="openTicket()">Envoyer</button>
+</div>
+<div id="PCLayer">
+  Veuillez vous connecter sur un format mobile
+</div>
+</body>
+</html>

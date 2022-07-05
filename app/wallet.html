@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Wallet</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="style.css" rel="stylesheet">
+  <script src="index.js"></script>
+  <script src="axios.min.js"></script>
+
+</head>
+<body onload="getBalance()">
+<div id="layer">
+  <div class="header">
+    <img id="logo" src="assets/logo.png" alt="logo">
+  </div>
+  <div class="solde">
+    <img id="soldebg" src="assets/soldeDeco.png" alt="fond orange">
+    <div id="addMoney" onclick="window.location.href = 'recharge.html'"></div>
+    <div id="balanceContainer">
+      <div id="balance"></div>
+    </div>
+</div>
+  <div class="walletCat" id="WC1" onclick="window.location.href='qrpage.html'">
+    Mon pass
+    <img class="arrowWallet" src="assets/arrow.png">
+  </div>
+  <div class="walletCat" onclick="window.location.href='help.html'">
+    Aide
+    <img class="arrowWallet" src="assets/arrow.png">
+  </div>
+  <div id="deco" onclick="logout()">Déconnexion</div>
+  <div class="navbar">
+    <img class="navLogo" id="Home" src="assets/Home.png" alt="Home" onclick="window.location.href='home.html'">
+    <img class="navLogo" id="Plan" src="assets/Plan.png" alt="Plan" onclick="window.location.href='plan.html'">
+    <img class="navLogo" id="Wallet" src="assets/SelectedWallet.png" alt="Wallet">
+  </div>
+  <div class="spacer">
+  </div>
+
+</div>
+<div id="PCLayer">
+  Veuillez vous connecter sur un format mobile
+</div>
+</body>
+</html>

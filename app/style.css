@@ -1,0 +1,504 @@
+html,body {
+    margin:0;
+    padding:0;
+    overflow-x:hidden;
+    font-family: "Roboto Light", sans-serif;
+}
+
+#logo {
+    width: 150px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+}
+
+.dayChoiceBar {
+    display: flex;
+    flex-direction: row;
+    border-radius: 5px;
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    background-color: darkgrey;
+    height: 22px;
+}
+
+.dayChoiceComp {
+    display: flex;
+    border-radius: 4px;
+    width: 100px;
+    background-color: transparent;
+    margin: 2px;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.8rem;
+    font-family: "Roboto Light", sans-serif  ;
+}
+
+.sceneChoiceBar {
+    display: flex;
+    flex-direction: row;
+    border-radius: 5px;
+    width: 320px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+    background-color: darkgrey;
+    height: 22px;
+}
+
+.sceneChoiceComp {
+    display: flex;
+    border-radius: 4px;
+    width: 100px;
+    background-color: transparent;
+    margin: 2px;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.8rem;
+    font-family: "Roboto Light", sans-serif  ;
+
+}
+
+.selected {
+    background-color: #FF5C00;
+}
+
+.navbar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 8%;
+    background-color: white;
+    margin: 0;
+    box-shadow: 0 -4px 5px lightgrey;
+}
+
+#Home {
+    margin-left: 80px;
+}
+
+#Wallet {
+    margin-right: 80px;
+}
+
+.navLogo {
+    margin: auto;
+}
+
+.progra {
+    position: relative;
+}
+
+#grid {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+}
+
+.artist {
+    display: block;
+    text-align: center;
+    font-family: fantasy, sans-serif;
+    background-color: #FF5C00;
+    color: black;
+}
+
+.conf {
+    display: block;
+    text-align: center;
+    font-family: fantasy, sans-serif;
+    background-color: lightsalmon;
+    color: black;
+}
+
+#BEP {
+    padding-bottom: 35px;
+    padding-top: 35px;
+    margin-top: 22%;
+}
+#LDR {
+    padding-bottom: 35px;
+    padding-top: 35px;
+    margin-top: 6%;
+}
+#Defo {
+    padding-bottom: 20px;
+    padding-top: 20px;
+    margin-top: 6%;
+}
+#TriSelec {
+    padding-bottom: 5px;
+    padding-top: 5px;
+    margin-top: 5%;
+}
+
+#DG {
+    padding-bottom: 35px;
+    padding-top: 35px;
+    margin-top: 22%;
+}
+#BS {
+    padding-bottom: 35px;
+    padding-top: 35px;
+    margin-top: 6%;
+}
+#MS {
+    padding-bottom: 35px;
+    padding-top: 35px;
+    margin-top: 7%;
+}
+
+#DJS {
+    padding-bottom: 35px;
+    padding-top: 35px;
+    margin-top: 23%;
+}
+#ML {
+    padding-bottom: 35px;
+    padding-top: 35px;
+    margin-top: 6%;
+}
+.scene {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-45%);
+    width: 65%;
+}
+
+#d1s2 {
+    display: none;
+}
+
+#d1s3 {
+    display: none;
+}
+
+#d1s4 {
+    display: none;
+}
+
+#d2s1 {
+    display: none;
+}
+
+#d2s2 {
+    display: none;
+}
+
+#d2s3 {
+    display: none;
+}
+
+#d2s4 {
+    display: none;
+}
+
+.spacer {
+    height: 80px;
+    background-color: transparent;
+}
+
+#map {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    width: 100%;
+    height: 760px;
+    margin-top: 1px;
+    z-index: 9;
+}
+
+.header {
+    background-color: white;
+    left: 0;
+    top: 0;
+    width: 100%;
+    margin: 0;
+    padding-bottom: 7%;
+    box-shadow: 0 4px 5px lightgrey;
+}
+
+.solde {
+    background-color: green;
+    width: 100%;
+    height: 230px;
+    margin: 0;
+    box-shadow: inset 0 5px 5px lightgrey;
+}
+
+label, input {
+    display: block;
+    font-family: "Roboto Light", sans-serif;
+}
+
+label {
+    margin-top: 5%;
+    margin-bottom: 3%;
+    font-size: 1rem;
+    font-weight: bold;
+    margin-left: 10%;
+}
+
+#labelRecharge {
+    margin-top: 15%;
+}
+
+input {
+    border-radius: 0;
+    border: solid lightgrey;
+    height: 30px;
+    font-size: 1.2rem;
+}
+
+input:focus {
+    outline: none;
+}
+
+#prefix {
+    margin-left: 10%;
+    width: 35px;
+}
+
+#phoneNb {
+    border-left: hidden;
+    padding-left: 5px;
+    font-size: 1.2rem;
+}
+
+.numberInput {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 2%;
+}
+
+#devise {
+    margin-left: 10%;
+    width: 35px;
+    text-align: center;
+}
+
+#montant {
+    border-left: hidden;
+    padding-left: 5px;
+    font-size: 1.2rem;
+}
+
+.montantInput {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 2%;
+}
+
+#buttonArea {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10%;
+}
+
+#validMontant {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5%;
+    color: red;
+    margin-left: 10%;
+    display: none;
+}
+
+#submitRecharge {
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 5px;
+    height: 40px;
+    width: 50%;
+    background-color: #FF5C00;
+    border: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+*{padding:0;margin:0}.wrapper{height:100vh;display:flex;justify-content:center;align-items:center;background-color:#eee}.checkmark__circle{stroke-dasharray: 166;stroke-dashoffset: 166;stroke-width: 2;stroke-miterlimit: 10;stroke: #7ac142;fill: none;animation: stroke 0.6s cubic-bezier(0.65, 0, 0.45, 1) forwards}.checkmark{width: 56px;height: 56px;border-radius: 50%;display: block;stroke-width: 2;stroke: #7ac142;stroke-miterlimit: 10;margin: 10% auto;box-shadow: inset 0 0 0 #7ac142;animation: fill .4s ease-in-out .4s forwards, scale .3s ease-in-out .9s both}  .checkmark__check{transform-origin: 50% 50%;stroke-dasharray: 48;stroke-dashoffset: 48;animation: stroke 0.3s cubic-bezier(0.65, 0, 0.45, 1) 0.8s forwards}  @keyframes stroke{100%{stroke-dashoffset: 0}}  @keyframes scale{0%, 100%{transform: none} 50%{transform: scale3d(1.1, 1.1, 1)}}  @keyframes fill{100%{box-shadow: inset 0 0 0 10px #7ac142}}
+
+.checkmark {
+    height: 250px;
+    width: 250px;
+}
+
+#return {
+    margin-left: 5px;
+    margin-top: 10px;
+}
+
+#addMoney {
+    display: block;
+    position: absolute;
+    top: 21.5%;
+    left: 59%;
+    transform: translateX(-45%);
+    width: 30px;
+    height: 30px;
+    background-color: transparent;
+    border-radius: 50px;
+}
+
+#balance {
+    display: block;
+    width: 80px;
+    height: 30px;
+    text-align: center;
+    background-color: transparent;
+    border-radius: 50px;
+    font-size: 1.2rem;
+    font-weight: bolder;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#balanceContainer {
+    position: absolute;
+    top: 26.5%;
+    left: 49%;
+    transform: translateX(-45%);
+    width: 80px;
+    height: 80px;
+}
+
+#PCLayer {
+    display: none;
+    text-align: center;
+    margin-top: 50%;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+@media (min-width: 450px) {
+    #layer {
+        display: none;
+    }
+    #PCLayer {
+        display: block;
+    }
+}
+
+.logLabel {
+    display: block;
+    margin-bottom: 1px;
+    font-weight: bold;
+    font-size: .9rem;
+    text-align: left;
+    margin-left: 72px;
+}
+
+.logInput {
+    font-size: 1rem;
+    position: relative;
+    width: 240px;
+    height: 25px;
+    left: 16%;
+    margin-bottom: 10px;
+    line-height: 1.5;
+    border-radius: 25px;
+    border: 2px solid #ccc;
+    resize: none;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+button {
+    height: 45px;
+    width: 160px;
+    outline: none;
+    border: none;
+    border-radius: 35px;
+    margin-left: 110px;
+    margin-right: 110px;
+    margin-top: 15px;
+    color: white;
+    font-weight: bold;
+    background-color: #FF5C00;
+    font-size: 1rem;
+}
+
+#idLabel {
+    margin-top: 20%;
+}
+
+.error {
+    color: red;
+    text-align: center;
+}
+
+#changeType {
+    text-align: center;
+    margin-top: 5%;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+#deco {
+    text-align: center;
+    color: #FF5C00;
+    text-decoration: underline;
+    bottom: 0;
+    margin-top: 10%;
+}
+
+.walletCat {
+    display: flex;
+    flex-direction: row;
+    width: 70%;
+    border-radius: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: lightgrey;
+    margin-top: 5%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 20px;
+    font-weight: bold;
+}
+
+#WC1 {
+    margin-top: 10%;
+}
+
+.arrowWallet {
+    display: block;
+    height: 20px;
+}
+#qr {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+#monPassQR {
+    text-align: center;
+    font-size: 1.2rem;
+    margin-top: 15%;
+}
+
+#helpMessage {
+    font-size: 1rem;
+    position: relative;
+    width: 240px;
+    height: 300px;
+    left: 16%;
+    margin-bottom: 10px;
+    line-height: 1.5;
+    border-radius: 25px;
+    border: 2px solid #ccc;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+
+

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Recharger</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="style.css" rel="stylesheet">
+  <script src="index.js"></script>
+  <script src="axios.min.js"></script>
+</head>
+<body>
+<div id="layer">
+  <img id="logo" src="assets/logo.png" alt="logo">
+  <label class="labelRecharge" id="labelRecharge" for="prefix">Votre numéro de téléphone</label>
+  <div class="numberInput">
+    <input class="rechargeInput" name="prefix" id="prefix" value="+33" disabled>
+    <input class="rechargeInput" name="Phone number" id="phoneNb">
+  </div>
+  <label class="labelRecharge" id="labelMontant" for="devise">Montant</label>
+  <div class="montantInput">
+    <input class="rechargeInput" name="Devise" id="devise" value="€" disabled>
+    <input class="rechargeInput" name="Montant" id="montant">
+  </div>
+  <div id="buttonArea">
+    <text id="validMontant">Veuillez entrer des données valide</text>
+    <button id="submitRecharge" onclick="recharge()">Payer</button>
+  </div>
+
+
+</div>
+<div id="PCLayer">
+  Veuillez vous connecter sur un format mobile
+</div>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Inscription</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="style.css" rel="stylesheet">
+    <script src="axios.min.js"></script>
+    <script src="index.js"></script>
+</head>
+<body>
+<div id="layer">
+    <img id="logo" src="assets/logo.png" alt="logo">
+    <p id="error" class="error"></p>
+    <label class="logLabel" id="idLabel" for="ticketNb">Numéro de billet</label>
+
+    <input type="text" class="logInput" id="ticketNb" required>
+
+    <label class="logLabel" for="name">Prénom</label>
+
+    <input type="text" class="logInput" id="name" required>
+
+    <label class="logLabel" for="surname">Nom</label>
+
+    <input type="text" class="logInput" id="surname" required>
+
+    <label class="logLabel" for="id">Email</label>
+
+    <input type="text" class="logInput" id="id" required>
+
+    <label class="logLabel" for="password">Password</label>
+
+    <input type="password" class="logInput" id="password" required>
+
+    <button id="LogIn" onclick="register()">Register</button>
+    <p id="changeType">Vous avez déjà un compte ? Cliquez <a href="connexion.html">ici</a> pour vous connecter</p>
+</div>
+<div id="PCLayer">
+    Veuillez vous connecter sur un format mobile
+</div>
+</body>
+</html>

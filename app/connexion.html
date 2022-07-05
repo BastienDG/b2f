@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Connexion</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="style.css" rel="stylesheet">
+    <script src="index.js"></script>
+    <script src="axios.min.js"></script>
+</head>
+<body>
+<div id="layer">
+    <img id="logo" src="assets/logo.png" alt="logo">
+    <p id="error" class="error"></p>
+    <label class="logLabel" for="id">Email / Usertag</label>
+
+    <input type="text" class="logInput" id="id" required>
+
+    <label class="logLabel" for="password">Password</label>
+
+    <input type="password" class="logInput" id="password" required>
+
+    <button id="LogIn" onclick="getLogged()">Log In</button>
+    <p id="changeType">Vous n'avez pas de compte ? Cliquez <a href="register.html">ici</a> pour vous enregistrer</p>
+</div>
+<div id="PCLayer">
+    Veuillez vous connecter sur un format mobile
+</div>
+</body>
+</html>
