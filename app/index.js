@@ -1,4 +1,4 @@
-const bearer = localStorage.getItem('bearer')
+//const bearer = localStorage.getItem('bearer')
 
 function isConnected (){
 if (localStorage.getItem('bearer') != null) {
